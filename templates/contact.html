@@ -1,0 +1,35 @@
+{% include 'header.html' %}
+<section class="dark-section">
+    <h1>Contact</h1>
+    <p>Please fill out this form to reach out to me and I will get back to you to address your needs.</p>
+    <form class="contact-form" action="{{ url_for('send_email') }}" method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" type="text" name="name" class="form-control" value="{{name}}" data-sb-validations="required">
+                <div class="invalid-feedback" data-sb-feedback="name:required">Please fill out your name.</div>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control" value="{{email}}">
+            </div>
+            <div class="col-md-4">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input id="phone" type="text" name="phone" class="form-control" value="{{phone}}">
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control" placeholder="Enter your message here..." name="message">{{message}}</textarea>
+            </div>
+            <div class="col-2">
+            </div>
+        </div>
+        <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+    </form>
+</section>
+</body>
+</html>

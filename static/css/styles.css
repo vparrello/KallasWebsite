@@ -1,0 +1,83 @@
+/* Colors
+Light: #F4F4F4
+Light Gray: #E8E8E8
+Gray: #BBBFCA
+Dark Gray: #495464
+*/
+
+
+body {
+    text-align: center;
+    position: relative;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 0 auto;
+}
+/* Header */
+
+.header {
+    color: #BBBFCA;
+    padding: 10px;
+}
+
+.header-link:link {
+    color: #BBBFCA;
+}
+
+.header-link:visited {
+    color: #BBBFCA;
+}
+.nav-icon {
+    padding: 10px 0px 10px 5px;
+    vertical-align: middle;
+}
+
+/* Sections */
+
+.dark-section {
+    background-color: #BBBFCA;
+    padding: 2em;
+}
+.light-section {
+    background-color: #E8E8E8;
+    padding: 2em;
+}
+/* Home Page */
+
+.brand-icon {
+    color: #495464;
+}
+
+.about-me {
+    text-align: left;
+}
+/* About Page */
+
+.abouttext {
+    text-align: left;
+}
+
+/* Resume Page */
+
+.resume {
+    text-align: left;
+}
+
+.resumedesc {
+    list-style-type: none;
+}
+
+/* Portfolio Page */
+.port-img {
+    float: left;
+}
+.port-text {
+    text-align: left;
+}
+
+/* Services Page */
+.serv-left-text {
+    text-align: left;
+}
+.serv-right-text {
+    text-align: right;
+}
