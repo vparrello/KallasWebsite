@@ -190,6 +190,9 @@ a {
 .serv-list {
     list-style-type: none;
 }
+.serv-pic {
+    max-width: 100%;
+}
 
 /* Pricing Page */
 .pricing-text {
