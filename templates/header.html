@@ -32,31 +32,33 @@
     <!-- Navbar -->
 <nav class="navbar navbar-expand navbar-light bg-light justify-content-center sticky-top">
   <div class="row">
-    <ul class="navbar-nav col-md-6 navigation">
-        <li class="nav-item ps-3">
-        <a class="nav-link" href="{{ url_for('index') }}">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('about') }}">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('services') }}">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('resume') }}">Resume</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('portfolio') }}">Portfolio</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('pricing') }}">Pricing</a>
-      </li>
-        <li class="nav-item pe-5">
+    <div class="navbar-nav col-md-6 navigation">
+        <div class="nav-item ps-3">
+            <a class="nav-link" href="{{ url_for('index') }}">Home<span class="sr-only">(current)</span></a>
+        </div>
+        <div class="nav-item dropdown">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            <div class="dropdown-content">
+                <div class="nav-item">
+                    <a class="nav-link" href="{{ url_for('resume') }}">Resume</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="{{ url_for('portfolio') }}">Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="{{ url_for('services') }}">Services</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="{{ url_for('pricing') }}">Pricing</a>
+        </div>
+        <div class="nav-item pe-4">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-        </li>
-    </ul>
+        </div>
+    </div>
       <ul class="navbar-nav col-md-6">
-          <i class="fa-brands fa-linkedin nav-icon ps-5"></i>
+          <i class="fa-brands fa-linkedin nav-icon ps-4"></i>
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/christantonkallasii/" target="_blank" rel="noopener noreferrer">Linkedin</a>
           </li>
