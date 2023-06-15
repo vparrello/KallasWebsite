@@ -18,18 +18,53 @@
                 <input id="phone" type="text" name="phone" class="form-control" value="{{phone}}">
             </div>
         </div>
-        <div class="row p-5">
+        <div class="row p-3">
             <div class="col-2">
             </div>
             <div class="col-8">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" class="form-control" placeholder="Enter your message here..." name="message">{{message}}</textarea>
+                <p><b>What should I put in the message?</b></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Name of your company</p>
+                        <p>Problem your company is solving for</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Timelines and deadlines</p>
+                        <p>Anything else you want me to know</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <label for="message" class="form-label"><b>Message</b></label>
+                        <textarea id="message" class="form-control" placeholder="Enter your message here..." rows=6 name="message">{{message}}</textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <p><b>Pricing Options</b></p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="TotalManagementPackage">
+                          <label class="form-check-label" for="TotalManagementPackage">
+                            Total Management Package
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="HoursOnlyPackage">
+                          <label class="form-check-label" for="HoursOnlyPackage">
+                            Hours Only Package
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="IndividualServices">
+                          <label class="form-check-label" for="IndividualServices">
+                            Individual Services
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             <div class="col-2">
             </div>
-        </div>
         <button class="btn btn-dark btn-lg" type="submit">Submit</button>
     </form>
 </section>
-</body>
-</html>
+{% include 'footer.html' %}

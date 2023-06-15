@@ -32,9 +32,12 @@
     <!-- Navbar -->
 <nav class="navbar navbar-expand navbar-light bg-light justify-content-center sticky-top">
   <div class="row">
-    <ul class="navbar-nav col-md-6">
-      <li class="nav-item ps-3">
-        <a class="nav-link" href="{{ url_for('about') }}">About<span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav col-md-6 navigation">
+        <li class="nav-item ps-3">
+        <a class="nav-link" href="{{ url_for('index') }}">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('about') }}">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('services') }}">Services</a>
@@ -45,20 +48,23 @@
         <li class="nav-item">
         <a class="nav-link" href="{{ url_for('portfolio') }}">Portfolio</a>
       </li>
-        <li class="nav-item pe-3">
+        <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('pricing') }}">Pricing</a>
+      </li>
+        <li class="nav-item pe-5">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
         </li>
     </ul>
       <ul class="navbar-nav col-md-6">
-        <i class="fa-brands fa-linkedin nav-icon ps-4"></i>
-        <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/christantonkallasii/">Linkedin</a>
-      </li>
-        <i class="fa-solid fa-envelope nav-icon"></i>
-        <li class="nav-item">
-        <a class="nav-link" href="#">ckallas2@gmail.com</a>
-      </li>
-    </ul>
+          <i class="fa-brands fa-linkedin nav-icon ps-5"></i>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/christantonkallasii/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          </li>
+          <i class="fa-solid fa-envelope nav-icon" onclick="copyEmail()"></i>
+          <li class="nav-item">
+              <a class="nav-link" onclick="copyEmail()">christ@kallas2.com</a>
+          </li>
+      </ul>
   </div>
 </nav>
 <body>

@@ -38,6 +38,10 @@ def resume():
 def portfolio():
     return render_template('portfolio.html')
 
+@app.route('/Pricing')
+def pricing():
+    return render_template('pricing.html')
+
 @app.route('/Contact', methods=["POST", "GET"])
 def contact():
     return render_template('contact.html')

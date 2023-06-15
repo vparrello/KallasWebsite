@@ -12,6 +12,15 @@ body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     margin: 0 auto;
 }
+
+a {
+    color: purple;
+}
+
+.TODO {
+    color: red;
+}
+
 /* Header */
 
 .header {
@@ -30,6 +39,9 @@ body {
     padding: 10px 0px 10px 5px;
     vertical-align: middle;
 }
+.navigation {
+    padding-right: 3em;
+}
 
 /* Sections */
 
@@ -41,25 +53,69 @@ body {
     background-color: #E8E8E8;
     padding: 2em;
 }
+.white-section {
+    background-color: white;
+    padding: 2em;
+}
 /* Home Page */
 
-.brand-icon {
+.portfolio-icon {
     color: #495464;
+}
+.profilepic {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 765px) {
+    .profilepic {
+        max-width: 50%;
+    }
+    .resumepic {
+        max-width: 50%;
+    }
+}
+
+.port-logo {
+    max-width: 100%;
+    padding-bottom: 1em;
 }
 
 .about-me {
     text-align: left;
 }
+
+.dropdown-arrow {
+    padding: 11px;
+}
+
+.dropdown-services:hover {
+    background-color: #BBBFCA;
+}
+
+.services-list {
+    display: none;
+}
+
+.services-list-item {
+    padding-left: 2em;
+}
+
 /* About Page */
 
-.abouttext {
-    text-align: left;
+#email:hover {
+    color: blue;
 }
 
 /* Resume Page */
 
 .resume {
     text-align: left;
+    padding-left: 3em;
+}
+
+.resumepic {
+    max-width: 200px;
+    padding-right: 5em
 }
 
 .resumedesc {
@@ -69,9 +125,30 @@ body {
 /* Portfolio Page */
 .port-img {
     float: left;
+    max-width: 100%;
+}
+.brand-logo {
+    max-width: 10%;
+    padding-right: 2%;
+}
+.tootall {
+    max-height: 50px;
+}
+
+.brand-list {
+    list-style-type: none;
 }
 .port-text {
     text-align: left;
+}
+.brand-desc {
+    display: none;
+}
+.card {
+    margin: 5px;
+}
+.card:hover {
+    background-color: #F4F4F4;
 }
 
 /* Services Page */
@@ -80,4 +157,17 @@ body {
 }
 .serv-right-text {
     text-align: right;
+}
+.serv-list {
+    list-style-type: none;
+}
+
+/* Pricing Page */
+.pricing-text {
+    text-align: left;
+}
+
+/* Contact Page */
+.form-check {
+    text-align: left;
 }

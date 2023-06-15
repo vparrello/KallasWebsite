@@ -1,21 +1,29 @@
 {% include 'header.html' %}
 
 <section class="dark-section">
-    <h1>Who Am I?</h1>
-    <div class="row">
-        <div class="col-md-4 pe-5">
-            <img src="static/images/blank-profile.jpeg">
-        </div>
-        <div class="col-md-8 ps-5">
-            <p class="abouttext">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet est placerat in. Odio facilisis mauris sit amet massa vitae. Consectetur adipiscing elit ut aliquam purus sit amet. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Eget nunc scelerisque viverra mauris in aliquam sem. In fermentum et sollicitudin ac orci phasellus egestas. Arcu risus quis varius quam. Adipiscing diam donec adipiscing tristique risus. Odio ut enim blandit volutpat maecenas volutpat. Proin sagittis nisl rhoncus mattis rhoncus urna. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Quis lectus nulla at volutpat.
-            </p>
+    <h1>My Story</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="profilepic" src="static/images/ChristKallas.jpg">
+            </div>
+            <div class="col-md-8 about-me">
+                <p>
+                    Hello! My name is Christ Anton Kallas II and I grew up in an entrepreneurial household that taught me the importance of bringing meaningful value to everything that I do.</p>
+                <br>
+                <p><b>Early Life</b> - My mom ran the marketing strategy for my dad’s successful chocolate manufacturer & storefront. Since I was little, I have been acutely aware of the dramatic impact of seemingly simple business decisions.</p>
+                <br>
+                <p><b>Education</b> - I loved the University of Illinois so much that I graduated twice, once in 2010 with an undergraduate degree in political science and the other was an MBA 12 years later.</p>
+                <br>
+                <p><b>Professional Life</b> - I have over 10 years of marketing experience spearheading innovation, managing 360 media campaigns, setting brand strategy, copywriting, creating full-lifecycle product plans, leading agency IATs & research management, managing P&Ls, and so much more. I’ve worked with zero-year-old startups and multicentury old manufacturers; I’ve managed budgets of as little as $5,000 up to $50M.</p>
+                <br>
+                <p>No matter the size of your business, I have the solutions for you.</p>
+            </div>
             <h5 class="abouttext"><i class="fa-solid fa-phone"></i> Phone number: (312) 987-0752</h5>
-            <a href="https://www.linkedin.com/in/christantonkallasii/"><h5 class="abouttext"><i class="fa-solid fa-brands fa-linkedin"></i>  Linkedin</h5></a>
-            <h5 class="abouttext"><i class="fa-solid fa-envelope"></i> Email: christ@kallas2.com</h5>
-
+            <a href="https://www.linkedin.com/in/christantonkallasii/" target="_blank" rel="noopener noreferrer"><h5 class="abouttext"><i class="fa-solid fa-brands fa-linkedin"></i>  Linkedin</h5></a>
+            <h5 class="abouttext" onclick="copyEmail()" id="email"><i class="fa-solid fa-envelope"></i> Email: christ@kallas2.com</h5>
+            <a href="{{ url_for('contact') }}">Contact me for more information</a>
         </div>
     </div>
 </section>
-</body>
-</html>
+{% include 'footer.html' %}
