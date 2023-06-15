@@ -11,7 +11,12 @@ def send_email():
     email = request.form['email']
     phone = request.form['phone']
     message = request.form['message']
-    email_message = f"Subject: Test Message From website\n\nName: {name}\nEmail: {email}\nPhone Number: {phone}\n {message}"
+    if request.method == 'POST':
+        price_packages = request.form.getlist('pricing_package')
+        packages = ''
+        for package in price_packages:
+            packages += package + ", "
+    email_message = f"Subject: Test Message From website\n\nName: {name}\nEmail: {email}\nPhone Number: {phone}\n Pricing Packages:{packages}\n {message}"
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(OWN_EMAIL, OWN_PASSWORD)
