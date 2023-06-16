@@ -26,4 +26,54 @@
         </div>
     </div>
 </section>
+<section class="light-section" id="portfolio">
+    <div class="row">
+        <h2>Portfolio</h2>
+        <div class="col-sm-3">
+            <h4><a href="{{ url_for('portfolio') }}#grow">Grow</a></h4>
+            <img class="port-logo" src="static/images/Grow.png">
+        </div>
+        <div class="col-sm-3">
+            <h4><a href="{{ url_for('portfolio') }}#innovate">Innovate</a></h4>
+            <img class="port-logo" src="static/images/Innovate.png">
+        </div>
+        <div class="col-sm-3">
+            <h4><a href="{{ url_for('portfolio') }}#maintain">Maintain</a></h4>
+            <img class="port-logo" src="static/images/Maintain.png">
+        </div>
+        <div class="col-sm-3">
+            <h4><a href="{{ url_for('portfolio') }}#sunset">Sunset</a></h4>
+            <img class="port-logo" src="static/images/Sunset.png">
+        </div>
+</section>
+<section class="dark-section" id="resume">
+    <div class="row">
+        <h2>Resume</h2>
+        <div class="col-md-6" onclick="dropDownFunction('MortonSalt')">
+            <h4><img class="aboutpic" src="static/images/MortonSalt.png">Morton Salt</h4>
+            <h5>Senior Associate Brand Manager</h5>
+            <p>April 2022 - Present</p>
+            <p id="MortonSalt" class="brand-desc">At Morton Salt, as the Senior Associate Brand Manager, I leveraged my marketing expertise to develop and execute effective brand strategies for the iconic Morton Salt portfolio. One of my major contributions was leading the transition of Morton Salt Grinders into more sustainable and eco-friendly packaging as well as increased Morton’s ecomm presence while restarting an unmanaged innovation pipeline. </p>
+        </div>
+        <div onclick="dropDownFunction('Ferrara')" class="col-md-6">
+            <h4><img class="aboutpic" src="static/images/Ferrara.png">Ferrara Candy Company</h4>
+            <h5>Associate Brand Manager - Iconic Brands</h5>
+            <p>November 2019 - April 2022</p>
+            <p id="Ferrara" class="brand-desc"> During my time as an Associate Brand Manager at Ferrara, I oversaw the branding and marketing initiatives for some of Ferrara’s most beloved candy brands such as Lemonhead, Red Hots, and Spree. I was deeply involved in brand renovations, product innovation, and the development of creative marketing campaigns which led to growth in incremental sales, brand awareness and distribution.</p>
+        </div>
+        <div class="row">
+        <div class="col-md-6" onclick="dropDownFunction('MikesHard')">
+            <h4><img class="aboutpic" src="static/images/MikesHardLemonade.png">Mike's Hard Lemonade</h4>
+            <h5>Associate Brand Manager</h5>
+            <p>October 2018 - November 2019</p>
+            <p id="MikesHard" class="brand-desc">Entrepreneurial ownership of both new to world innovation brands and existing brands. This includes launching Jugo Fuerte, a new to world line extension targeting Hispanic consumers, or rehabbing a mature regional brand like Cayman Jack. The strategies of both are different, but the goals are the same: to use data driven decisions to curate a brand that resonates with its target consumer nationwide while driving portfolio growth.</p>
+        </div>
+        <div class="col-md-6" onclick="dropDownFunction('Mizkan')">
+            <h4><img class="aboutpic" src="static/images/Mizkan.png">Mizkan America</h4>
+            <h5>Associate Brand Manager Mentee</h5>
+            <p>September 2016 - August 2018</p>
+            <p id="Mizkan" class="brand-desc">During my time as Brand Manager Mentee at Mizkan America, I was responsible for overseeing the renovation and reposition of Mizkan’s Four Monks Cleaning Vinegar. Through the execution of consumer research, volumetric analysis, market research, and usage testing I successfully created a plan to double the brand’s dollar share in <1 year. My innovative strategy created a projected $1MM in year one after launch.</p>
+        </div>
+    </div>
+</section>
 {% include 'footer.html' %}
