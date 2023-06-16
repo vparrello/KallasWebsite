@@ -129,6 +129,10 @@ a {
 #email:hover {
     color: blue;
 }
+.aboutpic {
+    max-width: 100px;
+    padding-right: 10px;
+}
 
 /* Resume Page */
 
