@@ -180,11 +180,9 @@ a {
 }
 .card-dark {
     background-color: #BBBFCA;
-    padding: 2em;
 }
 .card-light {
     background-color: #E8E8E8;
-    padding: 2em;
 }
 /* Services Page */
 .serv-left-text {
@@ -199,7 +197,14 @@ a {
 .serv-pic {
     max-width: 100%;
 }
-
+.servcard-dark {
+    background-color: #BBBFCA;
+    padding: 2em;
+}
+.servcard-light {
+    background-color: #E8E8E8;
+    padding: 2em;
+}
 /* Pricing Page */
 .pricing-text {
     text-align: left;
