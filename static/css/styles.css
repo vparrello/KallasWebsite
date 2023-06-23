@@ -130,7 +130,7 @@ a {
     color: blue;
 }
 .aboutpic {
-    max-width: 100px;
+    max-width: 150px;
     padding-right: 10px;
 }
 
@@ -180,16 +180,18 @@ a {
 }
 .card-dark {
     background-color: #BBBFCA;
+    padding: 2em;
 }
 .card-light {
     background-color: #E8E8E8;
+    padding: 2em;
 }
 /* Services Page */
 .serv-left-text {
-    text-align: left;
+    text-align: justify;
 }
 .serv-right-text {
-    text-align: right;
+    text-align: justify;
 }
 .serv-list {
     list-style-type: none;
