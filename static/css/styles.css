@@ -62,10 +62,10 @@ a {
   background-color: #ddd;
 }
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 /* Sections */
 
@@ -89,14 +89,17 @@ a {
 .profilepic {
     max-width: 100%;
     border-radius: 10%;
+    filter: drop-shadow(10px 10px 4px);
 }
 
 @media only screen and (max-width: 765px) {
     .profilepic {
         max-width: 50%;
+        filter: drop-shadow(10px 10px 4px);
     }
     .resumepic {
         max-width: 50%;
+        filter: drop-shadow(10px 10px 4px);
     }
 }
 
@@ -198,6 +201,7 @@ a {
 .serv-pic {
     max-width: 100%;
     border-radius: 10%;
+    filter: drop-shadow(10px 10px 4px);
 }
 .servcard-dark {
     background-color: #BBBFCA;
