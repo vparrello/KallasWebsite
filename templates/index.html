@@ -1,4 +1,8 @@
 {% include 'header.html' %}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KJRZ8KM
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <section class="dark-section" id="about">
     <h1>Who Am I?</h1>
     <div class="container-fluid">
@@ -67,7 +71,7 @@
         </ul>
     </ul>
 </section>
-<section class="white-section" id="portfolio">
+<section class="dark-section" id="portfolio">
     <div class="row">
         <h2>Portfolio</h2>
         <div class="col-sm-3">
@@ -86,6 +90,7 @@
             <h4><a href="{{ url_for('portfolio') }}#sunset">Sunset</a></h4>
             <img class="port-logo" src="static/images/Sunset.png">
         </div>
+    </div>
 </section>
 <section class="light-section" id="contact">
     <h2>Contact</h2>
@@ -114,19 +119,19 @@
                     <div class="col-md-4">
                         <p><b>Pricing Options</b></p>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="TotalManagementPackage">
+                          <input class="form-check-input" type="checkbox" value="Total Management Package" name="pricing_package" id="TotalManagementPackage">
                           <label class="form-check-label" for="TotalManagementPackage">
                             Total Management Package
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="HoursOnlyPackage">
+                          <input class="form-check-input" type="checkbox" value="Hours Only Package" name="pricing_package" id="HoursOnlyPackage">
                           <label class="form-check-label" for="HoursOnlyPackage">
                             Hours Only Package
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="IndividualServices">
+                          <input class="form-check-input" type="checkbox" value="Individual Services" name="pricing_package" id="IndividualServices">
                           <label class="form-check-label" for="IndividualServices">
                             Individual Services
                           </label>
