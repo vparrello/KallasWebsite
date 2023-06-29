@@ -39,13 +39,19 @@ a {
     padding: 10px 0px 10px 5px;
     vertical-align: middle;
 }
-.navigation {
-    padding-right: 3em;
-}
 .dropdown-content {
     display: none;
     position: absolute;
     z-index: 1;
+}
+
+@media only screen and (max-width: 765px) {
+    .navigation {
+        padding-right: 0px;
+    }
+    .row {
+        margin-right: 0px;
+    }
 }
 
 .dropdown-content a {
